@@ -1,0 +1,8 @@
+<div class="resultat">
+    <h5>
+        <span>{{resultat.name}}</span>
+        <span class="text-danger" *ngIf="resultat.isLucky">(吉)</span>
+        <span *ngIf="!resultat.isLucky">(凶)</span>
+    </h5>
+    <p [innerHTML]="resultat.description"></p>
+</div>

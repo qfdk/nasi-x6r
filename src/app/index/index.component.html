@@ -1,0 +1,55 @@
+<app-nav></app-nav>
+<div class="container">
+    <div class="col-md-6 offset-md-3">
+        <h4>小六壬在线排盘</h4>
+        <div class="form-group">
+            <label for="qcType">求测事情 ：</label>
+            <select class="form-control" id="qcType">
+                <option>求财</option>
+                <option>事业</option>
+                <option>感情</option>
+                <option>健康</option>
+                <option>其他</option>
+            </select>
+        </div>
+        <label for="qcType">起课数字(报三个数字) ：</label>
+        <div class="form-row">
+            <div class="col">
+                <div class="input-group">
+                    <input (ngModelChange)="numberChanged($event)" [(ngModel)]="num1" type="number" class="form-control" required>
+                    <div class="input-group-append">
+                        <button (click)="randomValues(1)" class="btn btn-outline-secondary" type="button" id="btn1">自动选数</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <input (ngModelChange)="numberChanged($event)" [(ngModel)]="num2" type="number" class="form-control" required>
+                    <div class="input-group-append">
+                        <button (click)="randomValues(2) "class="btn btn-outline-secondary" type="button" id="btn2">自动选数</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <input (ngModelChange)="numberChanged($event)" [(ngModel)]="num3" type="number" class="form-control" required>
+                    <div class="input-group-append">
+                        <button (click)="randomValues(3)" class="btn btn-outline-secondary" type="button" id="btn3">自动选数</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <button (click)="randomValues()" class="btn btn-primary">自动报数</button> -->
+        </div>
+        <small class="form-text text-muted">
+            静下心来，内心默默想三个数字。
+        </small>
+        <br>
+        <button (click)="calculer()" class="btn btn-primary">求测</button>
+        <div *ngIf="isResDisplayed">
+            <app-resultat [resultat]="res"></app-resultat>
+        </div>
+        <hr>
+
+    </div>
+</div>
+<app-footer></app-footer>
