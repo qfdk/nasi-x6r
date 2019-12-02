@@ -16,26 +16,26 @@
         <div class="form-row">
             <div class="col">
                 <div class="input-group">
-                    <input (ngModelChange)="numberChanged($event)" [(ngModel)]="num1" type="number" class="form-control" required>
-                    <div class="input-group-append">
-                        <button (click)="randomValues(1)" class="btn btn-outline-secondary" type="button" id="btn1">自动选数</button>
-                    </div>
+                    <input (ngModelChange)="numberChanged($event)" [(ngModel)]="num1" type="number" class="form-control myInput"
+                        required>
+                    <button (click)="randomValues(1)" class="btn btn-outline-secondary" type="button"
+                        id="btn1">自动选数</button>
                 </div>
             </div>
             <div class="col">
                 <div class="input-group">
-                    <input (ngModelChange)="numberChanged($event)" [(ngModel)]="num2" type="number" class="form-control" required>
-                    <div class="input-group-append">
-                        <button (click)="randomValues(2) "class="btn btn-outline-secondary" type="button" id="btn2">自动选数</button>
-                    </div>
+                    <input (ngModelChange)="numberChanged($event)" [(ngModel)]="num2" type="number" class="form-control myInput"
+                        required>
+                    <button (click)="randomValues(2) " class="btn btn-outline-secondary" type="button"
+                        id="btn2">自动选数</button>
                 </div>
             </div>
             <div class="col">
                 <div class="input-group">
-                    <input (ngModelChange)="numberChanged($event)" [(ngModel)]="num3" type="number" class="form-control" required>
-                    <div class="input-group-append">
-                        <button (click)="randomValues(3)" class="btn btn-outline-secondary" type="button" id="btn3">自动选数</button>
-                    </div>
+                    <input (ngModelChange)="numberChanged($event)" [(ngModel)]="num3" type="number" class="form-control myInput"
+                        required>
+                    <button (click)="randomValues(3)" class="btn btn-outline-secondary" type="button"
+                        id="btn3">自动选数</button>
                 </div>
             </div>
             <!-- <button (click)="randomValues()" class="btn btn-primary">自动报数</button> -->
