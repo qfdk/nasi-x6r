@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Resultat } from '../dataType/ModelType';
 
 @Component({
   selector: 'app-resultat',
@@ -9,10 +8,10 @@ import { Resultat } from '../dataType/ModelType';
 export class ResultatComponent implements OnInit {
 
   @Input()
-  resultat: Resultat;
+  resultats;
 
   constructor() {
-    console.log(this.resultat);
+    console.log(this.resultats);
   }
 
   ngOnInit() {

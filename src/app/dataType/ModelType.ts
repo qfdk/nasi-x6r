@@ -3,4 +3,5 @@ export interface Resultat {
     name: string;
     description: string;
     isLucky: boolean;
+    type: string;
 }
