@@ -26,7 +26,7 @@ export class IndexComponent implements OnInit {
       "name": "留连",
       "description": "留连事难成，求谋日未明，官事凡宜缓，去者未回程<br>失物南方见，急讨方心称，更须防口舌，人口且平平",
       "isLucky": false,
-      "type": "土"
+      "type": "湿土"
     },
     {
       "id": 3,
@@ -47,14 +47,14 @@ export class IndexComponent implements OnInit {
       "name": "小吉",
       "description": "小吉最吉昌，路上好商量，阴人来报喜，失物在坤方<br>行人即便至，交关甚是强，凡事皆和合，病者叩穷苍",
       "isLucky": true,
-      "type": "水"
+      "type": "燥土"
     },
     {
       "id": 6,
       "name": "空亡",
       "description": "空亡事不祥，阴人多乖张，求财无利益，行人有灾殃<br>失物寻一见，官事有刑伤，病人逢暗鬼，解禳保安康",
       "isLucky": false,
-      "type": "土"
+      "type": "水"
     }
   ];
 
