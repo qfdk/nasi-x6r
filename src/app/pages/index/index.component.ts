@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Resultat } from '../dataType/ModelType';
+import { Resultat } from 'src/app/dataType/ModelType';
+
 
 @Component({
   selector: 'app-index',
